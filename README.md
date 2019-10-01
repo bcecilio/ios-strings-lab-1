@@ -13,36 +13,78 @@
 
 Write code that prints out all the numbers from 1 to 10 as a single string.
 (Hint: the `String()` function can convert an Int to a String)
-
+Answer
+```
+for number in 1...10 {
+print(String(number))
+}
+```
 ***
 ## Question 2
 
 Write code that prints out all the even numbers from 5 to 51 as a single string.
+Answer
+```
+for number in 5...51 {
+if number % 2 == 0{
+    print(String(number))
+}
+}
 
+```
 ***
 ## Question 3
 
 Write code that prints out every number ending in 4 between 1 and 60 as a single string.
-
+Answer
+```
+for number in 1...60 {
+if number % 10 == 4{
+    print(String(number))
+}
+}
+```
 ***
 ## Question 4
 
 Print each character in the string `"Hello world!"`
+Answer
+```
+let questionFour = "Hello World"
 
+for char in questionFour {
+print(char)
+}
+```
 ***
 ## Question 5
 
 Print out the last character in the string below.  You cannot use the Character literal "!" (i.e you must access `myStringSeven`'s characters).
 
 `let myStringSeven = "Hello world!"`
+Answer
+```
+let myStringSeven = "Hello world!"
 
+let endIndex = myStringSeven.endIndex
+let lastCharacterIndex = myStringSeven.index(before: endIndex)
+let lastCharacter = myStringSeven[lastCharacterIndex]
+print("last character in \(myStringSeven) is", lastCharacter)
+```
 ***
 ## Question 6
 
 Write code that switches on a string, given the following conditions:
 - If the string's length is even, print out every character.
 - If the string's length is odd, print out every other character.
+Answer
+```
+let myString = DEADASS
 
+switch myString {
+
+}
+```
 ***
 ## Question 7
 
@@ -57,17 +99,29 @@ Build five pairs of **canonically equivalent** strings, the first of each being 
 ## Question 9
 
 **Using only Unicode**, print out `"HELLO WORLD!"`
-
+Answer
+```
+let questionNine = "\u{0068}\u{0065}\u{006C}\u{006C}\u{006F} \u{0077}\u{006F}\u{0072}\u{006C}\u{0064}\u{0021}"
+print(questionNine)
+```
 ***
 ## Question 10
 
 **Using only Unicode**, print out your name.
-
+Answer
+```
+let questionTen = "\u{0062}\u{072}\u{0065}\u{006E}\u{0064}\u{006F}\u{006E} \u{0063}\u{0065}\u{0063}\u{0069}\u{006C}\u{0069}\u{006F}"
+print(questionTen)
+```
 ***
 ## Question 11
 
 **Using only Unicode**, print out `"HELLO WORLD!"` in another language.
-
+Answer
+```
+let questionEleven = "\u{0068}\u{006F}\u{006C}\u{0061} \u{006D}\u{0075}\u{006E}\u{0064}\u{006F}"
+print(questionEleven)
+```
 ***
 ## Question 12
 
@@ -90,6 +144,20 @@ Flower Box:
 | ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
 - - - - - - - - - - -
 ```
+Answer
+```
+let flowerBox = """
+- - - - - - - - - - -
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |
+- - - - - - - - - - - 
+"""
+```
 
 ***
 ## Question 13
@@ -107,6 +175,20 @@ Chess Board:
 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
 ```
+Answer
+```
+let questionTwelve = """
+\u{2656} \u{2658} \u{2657} \u{2655} \u{2654} \u{2657} \u{2658} \u{2656}
+\u{2659} \u{2659} \u{2659} \u{2659} \u{2659} \u{2659} \u{2659} \u{2659}
+
+
+
+
+\u{265F} \u{265F} \u{265F} \u{265F} \u{265F} \u{265F} \u{265F} \u{265F}
+\u{265C} \u{265E} \u{265D} \u{265B} \u{265A} \u{265D} \u{265E} \u{265C}
+"""
+print(questionTwelve)
+```
 
 ***
 ## Question 14
@@ -116,6 +198,10 @@ You are given a string stored in the variable `aString`. Create new string named
 ```swift
 var aString = "Replace the letter e with *"
 // Your code here
+ ```
+ Answer
+ ```
+ 
  ```
 
 Example:
