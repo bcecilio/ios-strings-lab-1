@@ -273,14 +273,16 @@ var number1: 90
 var number2: 12
 var articleOfClothing: "boxer briefs"
 
-var madLib = "Here is tomorrow's weather report for \(geographicLocation)
+var madLib = """
+Here is tomorrow's weather report for \(geographicLocation)
 and vicinity. Early tomorrow, a \(adjective1)-front will
-collide with a mass of hot \(cars) moving from the
+collide with a mass of hot \(pluralNoun1) moving from the
 north. This means we can expect \(adjective2) winds and
 occasional \(pluralNoun2) by late afternoon. Wind velocity will
 be \(number1) miles an hour, and the high temperature should
 be around \(number2) degrees. So, if you're going out, you had
-better plan on wearing your \(articleOfClothing)".
+better plan on wearing your \(articleOfClothing).
+"""
 ```
 ***
 
