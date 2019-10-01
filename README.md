@@ -81,8 +81,10 @@ Answer
 ```
 let myString = DEADASS
 
-switch myString {
-
+for(index, alphabet) in myString.enumerated() {
+if index % 2 == 0{
+    print("\(myString)")
+}
 }
 ```
 ***
@@ -199,10 +201,6 @@ You are given a string stored in the variable `aString`. Create new string named
 var aString = "Replace the letter e with *"
 // Your code here
  ```
- Answer
- ```
- 
- ```
 
 Example:
 
@@ -211,7 +209,10 @@ Input:
 
 Expected values:
 `replacedString = "R*plac* th* l*tt*r * with *"`
+Answer
+```
 
+```
 ***
 ## Question 15
 
@@ -230,7 +231,13 @@ Input:
 
 Output:
 `"olleH"`
+Answer
+```
+var aString = "this string has 29 characters"
+var reverse = "sretcarahc 92 sah gnirts siht"
 
+print(reverse)
+```
 
 ## 16. Mad-Libs! Add a value to the declared variables below in playgrounds. Insert the variables (already in correct order) inside the stringmadLib and print. 
 
@@ -255,7 +262,26 @@ be \() miles an hour, and the high temperature should
 be around \() degrees. So, if you're going out, you had
 better plan on wearing your \()".
 ```
+Answer
+```
+var geographicLocation: "Lower East Side"
+var adjective1: "big"
+var pluralNoun1: "cars"
+var adjective2: "Blue"
+var pluralNoun2: "skateboards"
+var number1: 90
+var number2: 12
+var articleOfClothing: "boxer briefs"
 
+var madLib = "Here is tomorrow's weather report for \(geographicLocation)
+and vicinity. Early tomorrow, a \(adjective1)-front will
+collide with a mass of hot \(cars) moving from the
+north. This means we can expect \(adjective2) winds and
+occasional \(pluralNoun2) by late afternoon. Wind velocity will
+be \(number1) miles an hour, and the high temperature should
+be around \(number2) degrees. So, if you're going out, you had
+better plan on wearing your \(articleOfClothing)".
+```
 ***
 
 # Bonus :)
