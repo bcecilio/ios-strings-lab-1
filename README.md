@@ -81,17 +81,35 @@ Answer
 ```
 let myString = DEADASS
 
-for(index, alphabet) in myString.enumerated() {
-if index % 2 == 0{
-    print("\(myString)")
+print("there are \(myString) characters in message")
+
+if myString % 2 == 0 {
+    print("string is even")
+} else {
+    print("string is odd")
 }
+
+switch myString {
+case myString where myString.count % 2 == 0:
+    for char in myString {
+        print(char, terminator: " ")
+    }
+default:
+    for (index, char) in myString.enumerated() where index % 2 == 1{
+        print(char, terminator: " ")
+    }
 }
 ```
 ***
 ## Question 7
 
 Initialize a String with a character. Show that it is a Character, and not another String, that you're using to initialize it.
+Answer
+```
+let str = String(char)
 
+print(type(of: str))
+```
 ***
 ## Question 8
 
